@@ -1,0 +1,40 @@
+.card {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  text-align: center;
+  padding: 15px 20px;
+  width: 300px;
+  height: 300px;
+  word-break: normal;
+  overflow: hidden;
+}
+
+.card__title {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  height: 120px;
+  padding: 15px 10px;
+  background: lightblue;
+  border-radius: 15px;
+}
+
+.card__button {
+  align-self: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: lightblue;
+  border: 3px solid steelblue;
+  font-weight: 700;
+  color: steelblue;
+}
