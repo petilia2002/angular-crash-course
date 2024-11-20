@@ -1,0 +1,55 @@
+<div class="main-box">
+  <form class="my-form" (ngSubmit)="onSubmit()">
+    <h2>My Form</h2>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="name" />
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="email" />
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        rows="5"
+        name="message"
+        [(ngModel)]="message"
+      ></textarea>
+    </div>
+    <button type="submit">Submit</button>
+    <div *ngIf="isSubmitted">
+      <h4>Form data</h4>
+      <p>Name: {{ name }}</p>
+      <p>Email: {{ email }}</p>
+      <p>Message: {{ message }}</p>
+    </div>
+  </form>
+  <div class="cards-container">
+    <!--<table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.message }}</td>
+        </tr>
+      </tbody>
+    </table>-->
+    <app-card
+      *ngFor="let user of users; let i = index"
+      [user]="user"
+      [index]="i"
+      (delete)="deleteUser($event)"
+    ></app-card>
+  </div>
+</div>

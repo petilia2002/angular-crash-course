@@ -1,0 +1,90 @@
+.main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+#message {
+  resize: none;
+}
+
+.my-form {
+  width: 300px;
+  border-radius: 10px;
+  padding: 30px 35px;
+  display: flex;
+  flex-direction: column;
+  background: #82e9cd;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.my-form h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.my-form label {
+  font-weight: 500;
+}
+
+.my-form input,
+textarea {
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.my-form button {
+  align-self: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background: rgb(0, 187, 255);
+  color: #f4f4f4;
+  font-weight: 700;
+}
+
+.my-form button:hover {
+  background: rgb(0, 150, 212);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.cards-container {
+  width: 80%;
+  min-height: 400px;
+  background: #eee;
+  padding: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+table {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+td {
+  background: cornsilk;
+}
+
+th,
+td:first-child {
+  background: lightblue;
+}
